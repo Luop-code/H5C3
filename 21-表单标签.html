@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    一个完整的表单通常由表单域、表单控件（表单元素）、和提示信息构成<br>
+    form定义表单域，form会把它范围内的表单元素信息提交给服务器<br>
+    input输入，name定义input元素名称，value规定input元素的值<br>
+    name表单元素的名字，要求单选按钮和复选框要有相同的name值
+    <form action="demo.php" method="get" name="">
+        <!-- text文本框 -->
+
+        用户名：<input type="text" name="username" value="请输入用户名" maxlength="6"><br>
+        <!-- 密码框 -->
+        密码：<input type="password" name="pwd"> <br>
+        <!-- radio单选按钮，可实现多选一  name是表单元素名字，这里性别单选按钮必须有相同的name，才可以实现多选1 -->
+        
+        <!-- 单选按钮和复选框可以设置checked属性，当页面打开，默认选中该按钮 -->
+        性别：男<input type="radio" name="sex" value="男" checked> 女<input type="radio" name="sex" value="女"><br>
+        <!-- checkbox复选框 -->
+        爱好：吃饭<input type="checkbox" name="hobby"> 睡觉<input type="checkbox" name="hobby">
+         打豆豆<input type="checkbox"name="hobby">
+
+         <input type="submit" value="注册">
+
+         <input type="reset" value="重置"><br>
+
+         <!-- 普通按钮<button> 后期结合JS搭配使用-->
+            <input type="button" value="获取短信验证码"><br>
+            <!-- 文件域 使用场景 上传文件使用 -->
+            上传头像：<input type="file"><br>
+
+        
+    </form>
+</body>
+
+</html>
